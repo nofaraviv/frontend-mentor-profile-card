@@ -1,0 +1,82 @@
+body {
+
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+
+  background-color: hsl(185, 75%, 39%);
+  font-family: 'Kumbh Sans', sans-serif;
+  padding: 13% 0;
+  position: relative;
+}
+
+.card {
+
+  background-color: #ffffff;
+  border-radius: 20px;
+  width: 350px;
+  filter: drop-shadow(0 0 1rem #000000);
+  text-align: center;
+  margin:0 auto;
+  z-index: 1;
+
+}
+
+.card-header-img {
+
+  border-radius: 20px 20px 0 0;
+}
+
+.card-profile-img {
+
+  border-radius: 100%;
+  border: 5px solid #ffffff;
+  margin-top: -3rem;
+
+
+}
+
+h1 {
+
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.age-city {
+
+  font-weight: 100;
+  color: hsl(0, 0%, 59%);
+}
+
+.bold-numbers {
+
+  font-size: 18px;
+  font-weight: 900;
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.social-media {
+
+  display: inline-block;
+  font-weight: 100;
+  font-size: 0.7em;
+  color: hsl(0, 0%, 59%);
+}
+
+.top-circle {
+
+  position: absolute;
+  top: -400px;
+  left: -100px;
+}
+
+.bottom-circle {
+
+  position: absolute;
+  right: -200px;
+  bottom: -400px;
+  z-index: 0;
+}
