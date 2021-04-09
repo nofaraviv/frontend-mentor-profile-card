@@ -7,9 +7,14 @@ body {
 .container {
 
   background-color: hsl(185, 75%, 39%);
+  background-image: url(./images/bg-pattern-bottom.svg), url(./images/bg-pattern-top.svg);
+  background-position: 800px 400px, -200px -500px;
+  /* background-position: 50vw 50vh, calc(50vw - 978px) calc(50vh - 978px); */
+  background-repeat: no-repeat;
   font-family: 'Kumbh Sans', sans-serif;
   padding: 13% 0;
   position: relative;
+  z-index: -2;
 }
 
 .card {
@@ -17,7 +22,7 @@ body {
   background-color: #ffffff;
   border-radius: 20px;
   width: 350px;
-  filter: drop-shadow(0 0 1rem #000000);
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
   text-align: center;
   margin:0 auto;
   z-index: 1;
@@ -35,7 +40,6 @@ body {
   border: 5px solid #ffffff;
   margin-top: -3rem;
 
-
 }
 
 h1 {
@@ -48,6 +52,16 @@ h1 {
 
   font-weight: 100;
   color: hsl(0, 0%, 59%);
+}
+
+.city {
+
+  padding-bottom: 2rem;
+}
+
+hr {
+
+  border-top: 1px solid #8d8d9785;
 }
 
 .bold-numbers {
@@ -64,19 +78,4 @@ h1 {
   font-weight: 100;
   font-size: 0.7em;
   color: hsl(0, 0%, 59%);
-}
-
-.top-circle {
-
-  position: absolute;
-  top: -400px;
-  left: -100px;
-}
-
-.bottom-circle {
-
-  position: absolute;
-  right: -200px;
-  bottom: -400px;
-  z-index: 0;
 }
